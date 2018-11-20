@@ -153,6 +153,11 @@ body {
     background-color: #1a77d9;
     color: #fff;
 }
+
+#why *::selection {
+    background: rgba(0,0,0,0.2);
+}
+
 #how {
     height: 600px;
 }
