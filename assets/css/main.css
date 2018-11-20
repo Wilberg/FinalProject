@@ -1,4 +1,5 @@
 /* Fonts */
+/* [Titillium] */
 @font-face {
     font-family: 'Titillium';
     src: url('../webfonts/Titillium_Web/TitilliumWeb-Regular.ttf');
@@ -29,6 +30,11 @@
     src: url('../webfonts/Titillium_Web/TitilliumWeb-Black.ttf');
     font-weight: 1000;
 }
+/* [Quicksand] */
+@font-face {
+    font-family: 'Quicksand';
+    src: url('../webfonts/Quicksand/Quicksand-Regular.ttf');
+}
 
 /* General */
 * {
@@ -43,5 +49,30 @@
     height: 70px;
     background-color: #1a77d9;
 }
+#topHead .logo {
+    display: block;
+    float: left;
+    padding: 0px 20px;
+    line-height: 70px;
+    color: #fff;
+    text-transform: uppercase;
+    font-family: 'Quicksand', sans-serif;
+}
+#topHead .navigation {
+    float: right;
+}
+#topHead .navigation .navItem {
+    display: block;
+    line-height: 70px;
+    padding: 0px 20px;
+    color: #ffffff;
+    font-family: 'Titillium', sans-serif;
+    text-decoration: none;
+    float: left;
+}
 
-/*  */
+/* Elements */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
