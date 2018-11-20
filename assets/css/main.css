@@ -86,8 +86,8 @@ body {
     font-family: 'Titillium', sans-serif;
     text-decoration: none;
     float: left;
-    letter-spacing: 1pt;
-    font-size: 12pt;
+    letter-spacing: 1px;
+    font-size: 15px;
     text-transform: uppercase;
 }
 #topHead .navigation .navItem span {
