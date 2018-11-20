@@ -265,6 +265,11 @@ body {
     overflow: hidden;
     box-shadow: 0 6px 7px -5px rgba(0,0,0,0.5);
 }
+.section .defaultButton:active {
+    transition: all 0.1s linear;
+    transform: translateY(2px);
+    box-shadow: 0 1px 3px 0px rgba(0,0,0,0.5);
+}
 .section .defaultButton.darker {
     background-color: #11578c;
 }
