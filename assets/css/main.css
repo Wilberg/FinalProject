@@ -1,3 +1,36 @@
+/* Fonts */
+@font-face {
+    font-family: 'Titillium';
+    src: url('../webfonts/Titillium_Web/TitilliumWeb-Regular.ttf');
+    font-weight: 400;
+}
+@font-face {
+    font-family: 'Titillium';
+    src: url('../webfonts/Titillium_Web/TitilliumWeb-Light.ttf');
+    font-weight: 200;
+}
+@font-face {
+    font-family: 'Titillium';
+    src: url('../webfonts/Titillium_Web/TitilliumWeb-ExtraLight.ttf');
+    font-weight: 100;
+}
+@font-face {
+    font-family: 'Titillium';
+    src: url('../webfonts/Titillium_Web/TitilliumWeb-SemiBold.ttf');
+    font-weight: 600;
+}
+@font-face {
+    font-family: 'Titillium';
+    src: url('../webfonts/Titillium_Web/TitilliumWeb-Bold.ttf');
+    font-weight: 800;
+}
+@font-face {
+    font-family: 'Titillium';
+    src: url('../webfonts/Titillium_Web/TitilliumWeb-Black.ttf');
+    font-weight: 1000;
+}
+
+/* General */
 * {
     margin: 0;
     padding: 0;
