@@ -91,9 +91,24 @@ body {
 }
 #topHead .navigation .navItem span {
     transition: color 0.2s;
+    position: relative;
+}
+#topHead .navigation .navItem span::after {
+    content: '';
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 0%;
+    height: 2px;
+    background-color: #e7e7e7;
+    display: block;
+    transition: width 0.2s;
 }
 #topHead .navigation .navItem:hover span {
     color: #2299dd;
+}
+#topHead .navigation .navItem:hover span::after {
+    width: 50%;
 }
 #topHead .links {
     float: right;
