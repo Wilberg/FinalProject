@@ -237,7 +237,7 @@ body {
 .section .defaultButton {
     width: 120px;
     height: 40px;
-    background-color: #11578c;
+    background-color: #1a77d9;
     color: #fff;
     letter-spacing: 1px;
     text-align: center;
@@ -251,6 +251,9 @@ body {
     position: relative;
     border-radius: 5px;
     overflow: hidden;
+}
+.section .defaultButton.darker {
+    background-color: #11578c;
 }
 .section .defaultButton span {
     position: relative;
