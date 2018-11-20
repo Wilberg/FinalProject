@@ -153,7 +153,6 @@ body {
     background-color: #1a77d9;
     color: #fff;
 }
-
 #how {
     height: 600px;
 }
@@ -169,6 +168,9 @@ body {
     max-width: 1200px;
     margin: 0 auto;
     position: relative;
+}
+.textShadow {
+    text-shadow: 0 3px 2px rgba(0,0,0,0.2);
 }
 
 /* Sections */
@@ -197,6 +199,11 @@ body {
     width: 100%;
     height: 8vw;
     z-index: 2;
+}
+.section .skewSplitter.top {
+    top: 0px;
+    bottom: auto;
+    height: 3vw;
 }
 .section .splitItem {
     width: 50%;
@@ -251,6 +258,7 @@ body {
     position: relative;
     border-radius: 5px;
     overflow: hidden;
+    box-shadow: 0 6px 7px -5px rgba(0,0,0,0.5);
 }
 .section .defaultButton.darker {
     background-color: #11578c;
