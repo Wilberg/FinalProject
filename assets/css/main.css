@@ -162,6 +162,11 @@ body {
     height: 600px;
 }
 
+#what {
+    height: 600px;
+
+}
+
 /* Footer */
 #footer {
     background-color: #222;
@@ -188,7 +193,7 @@ body {
 .section.separator::after {
     content: '';
     display: block;
-    width: 1200px;
+    width: 200px;
     height: 3px;
     border-radius: 2px;
     background-color: #e7e7e7;
