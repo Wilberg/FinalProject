@@ -48,37 +48,6 @@ html, body {
 body {
     background-color: #fff;
 }
-@media only screen and (max-width: 1000px) {
-    #topHead .links {
-        display: none;
-    }
-}
-@media only screen and (max-width: 750px) {
-    /* wtf gjør vi med navigasjon på mobil? */
-    #topHead .container .navigation {
-        border-left: none;
-        display: none;
-    }
-    #topHead .container .navigation .navItem {
-        padding: 0px 10px;
-        font-size: 13px;
-    }
-}
-@media only screen and (max-width: 550px) {
-    * {
-        font-size: 15px;
-    }
-}
-@media only screen and (max-width: 450px) {
-    * {
-        font-size: 13px;
-    }
-}
-@media only screen and (max-width: 350px) {
-    * {
-        font-size: 12px;
-    }
-}
 
 /* TopHead */
 #topHead {
@@ -236,7 +205,7 @@ body *::selection {
     height: auto;
     position: relative;
     overflow: hidden;
-    min-height: 600px;
+    min-height: 400px;
     height: calc(1000px - 60vw);
     font-size: 16px;
 }
@@ -357,4 +326,95 @@ body *::selection {
 }
 .section .defaultButton:hover::after {
     height: 170%;
+}
+
+/* MAX HEIGHT*/
+@media only screen and (max-height: 800px) {
+    #hero .container .splitItem #heroImage,
+    #hero .container .splitItem .heroInfo {
+        top: 15vh;
+    }
+    #hero {
+        height: calc(500px + 15vh);
+    }
+}
+@media only screen and (max-height: 800px) and (max-width: 400px) {
+    #hero {
+        height: calc(500px + 25vh);
+    }
+}
+@media only screen and (max-height: 800px) and (max-width: 350px) {
+    #hero {
+        height: calc(500px + 10vh);
+    }
+}
+
+/* MAX WIDTH */
+@media only screen and (max-width: 1000px) {
+    #topHead .links {
+        display: none;
+    }
+}
+@media only screen and (max-width: 750px) {
+    /* wtf gjør vi med navigasjon på mobil? */
+    #topHead .container .navigation {
+        border-left: none;
+        display: none;
+    }
+    #topHead .container .navigation .navItem {
+        padding: 0px 10px;
+        font-size: 13px;
+    }
+    #hero .container {
+       display: flex;
+    }
+    #hero .container .splitItem.img {
+        width: 130px;        
+    }
+    #hero .container .splitItem.info {
+        flex-grow: 1;
+    }
+    #hero .container .splitItem #heroImage {
+        transform: translateX(-65%);
+    }
+    #hero .container .splitItem .heroInfo {
+        padding: 0 30px;
+    }
+}
+@media only screen and (max-width: 1050px) {
+    #hero * {
+        font-size: 14px;
+    }
+}
+@media only screen and (max-width: 550px) {
+    * {
+        font-size: 15px;
+    }
+    #hero * {
+        font-size: 13px;
+    }
+}
+@media only screen and (max-width: 460px) {
+    * {
+        font-size: 13px;
+    }
+    #hero .container .splitItem.img {
+        width: 60px;        
+    }
+    #hero .container .splitItem #heroImage {
+        transform: translateX(-71%);
+    }
+}
+@media only screen and (max-width: 400px) {
+    #hero * {
+        font-size: 12px;
+    }
+}
+@media only screen and (max-width: 350px) {
+    * {
+        font-size: 12px;
+    }
+    #hero .splitItem.img {
+        display: none;
+    }
 }
