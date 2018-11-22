@@ -457,6 +457,11 @@ body *::selection {
 }
 
 /* MAX WIDTH */
+@media only screen and (max-width: 1050px) {
+    #hero * {
+        font-size: 14px;
+    }
+}
 @media only screen and (max-width: 1000px) {
     #topHead .links {
         display: none;
@@ -486,11 +491,6 @@ body *::selection {
     }
     #hero .container .splitItem .heroInfo {
         padding: 0 30px;
-    }
-}
-@media only screen and (max-width: 1050px) {
-    #hero * {
-        font-size: 14px;
     }
 }
 @media only screen and (max-width: 550px) {
