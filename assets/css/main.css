@@ -482,7 +482,7 @@ body *::selection {
         flex-grow: 1;
     }
     #hero .container .splitItem #heroImage {
-        transform: translateX(-65%);
+        transform: translateX(-75%);
     }
     #hero .container .splitItem .heroInfo {
         padding: 0 30px;
@@ -509,7 +509,7 @@ body *::selection {
         width: 60px;        
     }
     #hero .container .splitItem #heroImage {
-        transform: translateX(-71%);
+        transform: translateX(-83%);
     }
 }
 @media only screen and (max-width: 400px) {
