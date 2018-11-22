@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Koality | About the app</title>
+    <link rel="stylesheet" href="./assets/css/main.css">
+</head>
+    <body>
+        <div id="topHead">
+            <div class="container">
+                    <h2 class="logo"><img src="./assets/media/icons/koala_icon.svg" alt="KoalityIcon">Koality</h2>
+                <div class="navigation">
+                    <a href="./" class="navItem"><span>Home</span></a>
+                    <a href="./problem.html" class="navItem"><span>The problem</span></a>
+                    <a href="./solution.html" class="navItem"><span>Our solution</span></a>
+                    <a href="./about.html" class="navItem"><span>About the app</span></a>
+                </div>
+                <div class="links">
+                    <img src="./assets/media/icons/googleplay.png" alt="Download on Google Play" />
+                    <img src="./assets/media/icons/appstore.png" alt="Download on App Store" />
+                </div>
+            </div>
+        </div>
+        <div id="topHeadSpace"></div>
+        <div class="section">
+            <div class="container megaContainer">
+                <div class="pageBanner">
+                    <img src="https://images.pexels.com/photos/845434/pexels-photo-845434.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="Banner" />
+                </div>
+                <div class="pageContent" id="stickystart">
+                    <div class="pageNav">
+                        <div id="stickybox">
+                            <a href="" class="navigationItem"><span>About the app</span></a>
+                            <a href="" class="navigationItem"><span>SubTitle1</span></a>
+                        </div>
+                    </div>
+                    <div class="pageMain">
+                        <h1 class="pageTitle">About the app</h1>
+                        <p class="subTitle">How does Koality work?</p>
+                        <div class="pageText">
+                            <p class="textParagraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate modi nisi quibusdam, molestiae dolores distinctio magnam velit sint blanditiis id, commodi quo rem, omnis quis ad recusandae est a facilis?</p>
+                            <p class="textParagraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur deleniti dolore tenetur voluptatum saepe soluta veniam ut esse nihil eius, unde modi sed dolorem, iure tempora sequi minus possimus repudiandae iste rerum quo velit illum nisi illo. Optio qui, sapiente assumenda adipisci dignissimos nobis ad, distinctio tempore nemo commodi suscipit.</p>
+                            <p class="textParagraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit nulla repellendus porro recusandae. Obcaecati itaque, earum harum quae perspiciatis quibusdam veniam consectetur totam nobis laboriosam? Facere impedit iste obcaecati a vel neque cumque, laudantium amet. Aliquid ad quisquam tempora enim ea repudiandae esse animi nemo pariatur incidunt placeat architecto nesciunt doloremque ut quis blanditiis non dicta quo quasi nam, accusantium illum! Temporibus alias quos pariatur dolore eveniet voluptate mollitia. Expedita aperiam atque consequuntur mollitia, architecto, maxime sed suscipit perspiciatis quidem amet, commodi minus perferendis accusamus ratione nihil saepe? Quo eveniet ipsum quidem laboriosam odit voluptatem maiores similique cupiditate quae labore.</p>
+                            <h2 class="textTitle">SubTitle 1</h2>
+                            <p class="textParagraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis unde sed iusto error tempora saepe vel fuga ut eum exercitationem ratione et, aspernatur cupiditate excepturi. Eveniet nesciunt ipsam fugit cupiditate? Magnam neque saepe, aspernatur alias nostrum cupiditate corrupti fugit provident quo unde enim exercitationem. Laboriosam dolorum maxime alias nihil, laborum reprehenderit fuga ea deserunt magnam nam ad tempora, quas obcaecati rem, nesciunt facere minus tenetur officia molestiae. Nisi eveniet expedita iusto mollitia ex, quis quae sit dicta voluptatem fuga soluta adipisci in autem quasi ipsum voluptatibus officiis? Aliquam placeat, unde nulla eveniet dignissimos debitis. Quidem veniam ullam, reprehenderit rem perferendis enim provident unde quod earum repudiandae. Eveniet iure quasi ab voluptatum, animi optio laboriosam, voluptate mollitia, corporis enim corrupti reprehenderit.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="footer">
+
+        </div>
+        <script>
+            var stickystart = document.getElementById('stickystart');
+            var stickybox = document.getElementById('stickybox');
+            window.addEventListener('scroll', () => {
+                if (window.scrollY >= stickystart.offsetTop) {
+                    stickybox.setAttribute('class', 'sticked');
+                } else {
+                    stickybox.removeAttribute('class');
+                }
+            });
+        </script>
+    </body>
+</html>

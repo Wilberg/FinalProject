@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Koality | The Problem</title>
+    <link rel="stylesheet" href="./assets/css/main.css">
+</head>
+    <body>
+        <div id="topHead">
+            <div class="container">
+                    <h2 class="logo"><img src="./assets/media/icons/koala_icon.svg" alt="KoalityIcon">Koality</h2>
+                <div class="navigation">
+                    <a href="./" class="navItem"><span>Home</span></a>
+                    <a href="./problem.html" class="navItem"><span>The problem</span></a>
+                    <a href="./solution.html" class="navItem"><span>Our solution</span></a>
+                    <a href="./about.html" class="navItem"><span>About the app</span></a>
+                </div>
+                <div class="links">
+                    <img src="./assets/media/icons/googleplay.png" alt="Download on Google Play" />
+                    <img src="./assets/media/icons/appstore.png" alt="Download on App Store" />
+                </div>
+            </div>
+        </div>
+        <div id="topHeadSpace"></div>
+        <div class="section">
+            <div class="container megaContainer">
+                <div class="pageBanner">
+                    <img src="https://images.pexels.com/photos/1280162/pexels-photo-1280162.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="Banner" />
+                </div>
+                <div class="pageContent" id="stickystart">
+                    <div class="pageNav">
+                        <div id="stickybox">
+                            <a href="" class="navigationItem"><span>The Problem</span></a>
+                            <a href="" class="navigationItem"><span>SubTitle1</span></a>
+                        </div>
+                    </div>
+                    <div class="pageMain">
+                        <h1 class="pageTitle">The problem</h1>
+                        <p class="subTitle">Loneliness and isolation</p>
+                        <div class="pageText">
+                            <p class="textParagraph">According to the annual SHoT (Studentenes Helse- og Trivselsundersøkelse) report of 2018, 23% of students admit that they miss someone to be with on a daily basis. Many students move because of their studies and have problems fitting in with the environment. This often leaves the student feeling alone and isolated.</p>
+                            <p class="textParagraph">This means they don’t want to go to school, and because of this they miss out on lectures and eventually fall behind in the subject. Unfortunately some also drop out completely. There are ways for students to get in touch with each other, some ends up participating in unions, sports clubs or other social-and activity groups, but still there are people feeling lonely, and don’t feel the solution is going outside.</p>
+                            <p class="textParagraph">Because some people don’t like to meet up when they don’t know anyone. Because of these challenges, we need a place where students can talk to each other, get to know each other, and suddenly meet and become friends.</p>
+                            <h2 class="textTitle">SubTitle 1</h2>
+                            <p class="textParagraph">This idea with an app can solve these challenges to easier make students get in touch, a cross from studies and school. It makes the limit smaller for the students who think it's hard making friends, especially at new school and studies.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="footer">
+            
+        </div>
+        <script>
+            var stickystart = document.getElementById('stickystart');
+            var stickybox = document.getElementById('stickybox');
+            window.addEventListener('scroll', () => {
+                if (window.scrollY >= stickystart.offsetTop) {
+                    stickybox.setAttribute('class', 'sticked');
+                } else {
+                    stickybox.removeAttribute('class');
+                }
+            });
+        </script>
+    </body>
+</html>
