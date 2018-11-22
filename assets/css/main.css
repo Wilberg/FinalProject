@@ -64,7 +64,8 @@ body {
 #topHead .logo {
     display: block;
     float: left;
-    padding: 0px 20px;
+    text-align: center;
+    width: 230px;
     line-height: 70px;
     color: #1a77d9;
     text-transform: uppercase;
@@ -206,7 +207,7 @@ body *::selection {
     position: relative;
 }
 .megaContainer {
-    max-width: 1000px;
+    max-width: 1200px;
 }
 .textShadow {
     text-shadow: 0 3px 2px rgba(0,0,0,0.2);
@@ -229,7 +230,7 @@ body *::selection {
 .pageNav {
     position: absolute;
     left: 0;
-    width: 200px;
+    width: 251px;
     padding: 20px 10px 20px 0px;
 }
 .pageNav #stickybox {
@@ -237,7 +238,7 @@ body *::selection {
     border-right: 1px solid #e7e7e7;
     padding: 20px 0px;
     display: block;
-    width: 200px;
+    width: 251px;
 }
 .pageNav .navigationItem {
     position: relative;
@@ -271,10 +272,10 @@ body *::selection {
 }
 #stickybox.sticked {
     position: fixed;
-    top: 90px;
+    top: 70px;
 }
 .pageMain {
-    padding: 30px 30px 30px 230px;
+    padding: 30px 30px 30px 280px;
 }
 .pageTitle {
     font-family: 'Quicksand', sans-serif;
@@ -462,12 +463,12 @@ body *::selection {
         font-size: 14px;
     }
 }
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1100px) {
     #topHead .links {
         display: none;
     }
 }
-@media only screen and (max-width: 750px) {
+@media only screen and (max-width: 800px) {
     /* wtf gjør vi med navigasjon på mobil? */
     #topHead .container .navigation {
         border-left: none;
