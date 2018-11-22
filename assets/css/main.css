@@ -333,6 +333,12 @@ body *::selection {
     font-size: 1.9em;
     color: #555;
 }
+.logoText {
+    color: #1a77d9;
+    font-family: 'Quicksand', sans-serif;
+    text-transform: uppercase;
+    font-size: 15px;
+}
 
 /* Sections */
 .section {
