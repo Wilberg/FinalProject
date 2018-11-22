@@ -48,6 +48,37 @@ html, body {
 body {
     background-color: #fff;
 }
+@media only screen and (max-width: 1000px) {
+    #topHead .links {
+        display: none;
+    }
+}
+@media only screen and (max-width: 750px) {
+    /* wtf gjør vi med navigasjon på mobil? */
+    #topHead .container .navigation {
+        border-left: none;
+        display: none;
+    }
+    #topHead .container .navigation .navItem {
+        padding: 0px 10px;
+        font-size: 13px;
+    }
+}
+@media only screen and (max-width: 550px) {
+    * {
+        font-size: 15px;
+    }
+}
+@media only screen and (max-width: 450px) {
+    * {
+        font-size: 13px;
+    }
+}
+@media only screen and (max-width: 350px) {
+    * {
+        font-size: 12px;
+    }
+}
 
 /* TopHead */
 #topHead {
@@ -81,7 +112,6 @@ body {
     margin-left: 20px;
     padding-left: 20px;
     border-left: 1px solid #e7e7e7;
-
 }
 #topHead .navigation .navItem {
     display: block;
@@ -152,14 +182,14 @@ body {
 }
 #hero .heroTitle {
     font-family: 'Quicksand', sans-serif;
-    font-size: 4vw;
+    font-size: 3.8em;
     text-align: left;
 }
 #hero .heroDesc {
     text-align: left;
     font-family: 'Titillium', sans-serif;
     font-weight: 100;
-    font-size: 2vw;
+    font-size: 1.9em;
 }
 #hero #heroImage {
     opacity: 1;
@@ -170,7 +200,6 @@ body {
 }
 
 #why {
-    height: 600px;
     background-color: #1a77d9;
     color: #fff;
 }
@@ -180,7 +209,9 @@ body *::selection {
 }
 
 #how {
-    height: 600px;
+}
+
+#what {
 }
 
 /* Footer */
@@ -205,11 +236,14 @@ body *::selection {
     height: auto;
     position: relative;
     overflow: hidden;
+    min-height: 600px;
+    height: calc(1000px - 60vw);
+    font-size: 16px;
 }
 .section.separator::after {
     content: '';
     display: block;
-    width: 1200px;
+    width: 200px;
     height: 3px;
     border-radius: 2px;
     background-color: #e7e7e7;
@@ -256,6 +290,7 @@ body *::selection {
     left: 50%;
     transform: translateY(-50%) translateX(-50%);
     width: 700px;
+    max-width: 100%;
     text-align: left;
     padding: 0px 50px;
 }
@@ -270,7 +305,7 @@ body *::selection {
     margin-left: auto;
     margin-right: auto;
     margin-top: 40px;
-    font-size: 1.6vw;
+    font-size: 1.6em;
 }
 .section .defaultButton {
     width: 120px;
