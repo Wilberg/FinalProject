@@ -10,7 +10,7 @@
 <body>
     <div id="topHead">
         <div class="container">
-            <h2 class="logo"><img src="./assets/media/icons/koala_icon.svg" alt="KoalityIcon">Koality</h2>
+            <h2 class="logo">Koality<img src="./assets/media/icons/koala_icon.svg" alt="KoalityIcon"></h2>
             <div class="navigation">
                 <a href="./" class="navItem"><span>Home</span></a>
                 <a href="./problem.html" class="navItem"><span>The problem</span></a>
@@ -26,7 +26,9 @@
     <div id="hero" class="section">
         <div class="container">
             <div class="splitItem img">
-                <img id="heroImage" src="./assets/media/images/phone_koality.png" alt="Phone placeholder" />
+                <video id="heroImage" alt="Mobile Phone" playsinline loop autoplay muted>
+                    <source src="./assets/media/animated/phone.mp4" type="video/mp4">
+                </video>
             </div>
             <div class="splitItem info">
                 <div class="heroInfo">
@@ -74,7 +76,27 @@
         </div>
     </div>
     <div id="footer">
-
+        <div id="topFooter">
+            <div class="container megaContainer">
+                <ul class="footerColumn">
+                    <li class="footerItem"><a href="">Resources & Liscenses</a></li>
+                    <li class="footerItem"><a href="./index.html">Home</a></li>
+                    <li class="footerItem"><a href="./problem.html">The problem</a></li>
+                    <li class="footerItem"><a href="./solution.html">Our solution</a></li>
+                    <li class="footerItem"><a href="./about.html">About the application</a></li>
+                </ul>
+                <ul class="footerColumn right">
+                    <li class="footerItem"><img src="./assets/media/icons/googleplay.png" alt="Download on Google Play" /></li>
+                    <li class="footerItem"><img src="./assets/media/icons/appstore.png" alt="Download on App Store" /></li>
+                </ul>
+            </div>
+        </div>
+        <div id="middleFooter">
+            <img src="./assets/media/icons/koala_icon.svg" alt="Koality Icon" />
+        </div>
+        <div id="bottomFooter">
+            <span>All resources not provided with a license are free to use.</span>
+        </div>
     </div>
 </body>
 </html>

@@ -70,7 +70,7 @@ body {
     color: #1a77d9;
     text-transform: uppercase;
     font-family: 'Quicksand', sans-serif;
-    font-size: 21pt;
+    font-size: 1.6em;
     user-select: none;
     -ms-user-select: none;
     -moz-user-select: none;
@@ -80,7 +80,7 @@ body {
 #topHead .logo img {
     height: 2em;
     vertical-align: middle;
-    margin-right: 5px;
+    margin-left: 5px;
 }
 #topHead .navigation {
     float: left;
@@ -171,7 +171,11 @@ body {
     font-size: 1.9em;
 }
 #hero #heroImage {
+    display: block;
+    position: relative;
+    margin: 0 auto;
     opacity: 1;
+    width: 366px;
     transition: opacity 0.5s;
 }
 #hero #heroImage.faded {
@@ -197,7 +201,50 @@ body *::selection {
 /* Footer */
 #footer {
     background-color: #222;
-    height: 300px;
+}
+#footer::after, #footer .container::after {
+    content:'';
+    clear: both;
+    display: table;
+}
+#topFooter {
+    padding: 40px 0;
+}
+#bottomFooter {
+    padding: 20px 0;
+    text-align: center;
+    color: #fff;
+    font-family: 'Titillium', sans-serif;
+}
+#footer .footerColumn {
+    float: left;
+    list-style: none;
+    list-style-type: none;
+}
+#footer .footerColumn.right {
+    float: right;
+}
+#footer .footerItem {
+    float: left;
+    color: #fff;
+    font-family: 'Titillium', sans-serif;
+}
+#footer .footerItem a {
+    padding: 10px 10px;
+    border-right: 1px solid #373737;
+    display: block;
+    color: #1a77d9;
+    text-decoration: none;
+}
+#footer .footerItem img {
+    height: 40px;
+    margin: 0px 10px;
+}
+#footer #middleFooter {
+    text-align: center;
+}
+#footer #middleFooter img {
+    height: 70px;
 }
 
 /* Elements */
@@ -207,7 +254,7 @@ body *::selection {
     position: relative;
 }
 .megaContainer {
-    max-width: 1200px;
+    max-width: 1000px;
 }
 .textShadow {
     text-shadow: 0 3px 2px rgba(0,0,0,0.2);
@@ -443,7 +490,7 @@ body *::selection {
         top: 15vh;
     }
     #hero {
-        height: calc(500px + 15vh);
+        /*height: calc(500px + 15vh);*/
     }
 }
 @media only screen and (max-height: 800px) and (max-width: 400px) {
