@@ -457,12 +457,12 @@ body *::selection {
 }
 
 /* MAX WIDTH */
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1100px) {
     #topHead .links {
         display: none;
     }
 }
-@media only screen and (max-width: 750px) {
+@media only screen and (max-width: 800px) {
     /* wtf gjør vi med navigasjon på mobil? */
     #topHead .container .navigation {
         border-left: none;
