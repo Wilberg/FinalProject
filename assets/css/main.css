@@ -70,6 +70,11 @@ body {
     text-transform: uppercase;
     font-family: 'Quicksand', sans-serif;
     font-size: 21pt;
+    user-select: none;
+    -ms-user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -webkit-user-drag: none;
 }
 #topHead .navigation {
     float: left;
@@ -89,6 +94,10 @@ body {
     letter-spacing: 1px;
     font-size: 15px;
     text-transform: uppercase;
+    user-select: none;
+    -ms-user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
 }
 #topHead .navigation .navItem span {
     transition: color 0.2s;
@@ -121,6 +130,11 @@ body {
     float: left;
     margin-top: 17px;
     margin-left: 10px;
+    user-select: none;
+    -ms-user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -webkit-user-drag: none;
 }
 
 /* Hero */
@@ -147,6 +161,13 @@ body {
     font-weight: 100;
     font-size: 2vw;
 }
+#hero #heroImage {
+    opacity: 1;
+    transition: opacity 0.5s;
+}
+#hero #heroImage.faded {
+    opacity: 0.5;
+}
 
 #why {
     height: 600px;
@@ -154,7 +175,7 @@ body {
     color: #fff;
 }
 
-#why *::selection {
+body *::selection {
     background: rgba(0,0,0,0.2);
 }
 
@@ -218,6 +239,11 @@ body {
     position: relative;
 }
 .section .splitItem img {
+    user-select: none;
+    -ms-user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -webkit-user-drag: none;
     height: 700px;
     position: absolute;
     bottom: -100px;
@@ -264,6 +290,10 @@ body {
     border-radius: 5px;
     overflow: hidden;
     box-shadow: 0 6px 7px -5px rgba(0,0,0,0.5);
+    user-select: none;
+    -ms-user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
 }
 .section .defaultButton:active {
     transition: all 0.1s linear;
