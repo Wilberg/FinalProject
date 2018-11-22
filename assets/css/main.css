@@ -107,6 +107,11 @@ body {
     -webkit-user-select: none;
     -webkit-user-drag: none;
 }
+#topHead .logo img {
+    height: 2em;
+    vertical-align: middle;
+    margin-right: 10px;
+}
 #topHead .navigation {
     float: left;
     margin-left: 20px;
