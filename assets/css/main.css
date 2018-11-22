@@ -166,7 +166,11 @@ body {
     -webkit-user-select: none;
     -webkit-user-drag: none;
 }
-
+#topHeadSpace {
+    height: 70px;
+    width: 100%;
+    display: block;
+}
 /* Hero */
 #hero {
     height: 750px;
@@ -212,6 +216,7 @@ body *::selection {
 }
 
 #what {
+    background-color: #f5f5f5;
 }
 
 /* Footer */
@@ -226,8 +231,62 @@ body *::selection {
     margin: 0 auto;
     position: relative;
 }
+.megaContainer {
+    max-width: 1000px;
+}
 .textShadow {
     text-shadow: 0 3px 2px rgba(0,0,0,0.2);
+}
+
+/* Page */
+.pageBanner {
+    width: 100%;
+    height: 400px;
+}
+.pageBanner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.pageContent {
+    width: 100%;
+    position: relative;
+}
+.pageNav {
+    position: absolute;
+    left: 0;
+    width: 200px;
+    border-right: 1px solid #e7e7e7;
+    padding: 20px 10px;
+}
+.pageMain {
+    padding: 30px 30px 30px 230px;
+}
+.pageTitle {
+    font-family: 'Quicksand', sans-serif;
+    color: #1a77d9;
+    font-size: 3em;
+}
+.subTitle {
+    font-family: 'Titillium', sans-serif;
+    font-weight: 100;
+    font-size: 1.8em;
+    color: #666;
+    padding-left: 20px;
+}
+.pageText {
+    padding: 20px;
+}
+.textParagraph {
+    margin: 1em 0;
+    font-size: 18px;
+    font-family: 'Titillium', sans-serif;
+    line-height: 1.5;
+}
+.textTitle {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.9em;
+    color: #555;
 }
 
 /* Sections */
@@ -236,9 +295,10 @@ body *::selection {
     height: auto;
     position: relative;
     overflow: hidden;
-    min-height: 600px;
-    height: calc(1000px - 60vw);
     font-size: 16px;
+}
+.section.pushBottom .centerObject {
+    padding-bottom: 9vw;
 }
 .section.separator::after {
     content: '';
@@ -285,14 +345,11 @@ body *::selection {
     transform: translateX(-50%);
 }
 .section .centerObject {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translateY(-50%) translateX(-50%);
     width: 700px;
+    margin: 0 auto;
     max-width: 100%;
     text-align: left;
-    padding: 0px 50px;
+    padding: 8vw 50px;
 }
 .section .sectionTitle {
     font-family: 'Quicksand', sans-serif;
