@@ -158,6 +158,7 @@ body {
     padding-right: 50px;
     position: relative;
     top: 200px;
+    top: 20vh;
 }
 #hero .heroTitle {
     font-family: 'Quicksand', sans-serif;
@@ -177,6 +178,7 @@ body {
     opacity: 1;
     width: 366px;
     transition: opacity 0.5s;
+    top: 15vh;
 }
 #hero #heroImage.faded {
     opacity: 0.5;
@@ -483,16 +485,6 @@ body *::selection {
     height: 170%;
 }
 
-/* MAX HEIGHT*/
-@media only screen and (max-height: 800px) {
-    #hero .container .splitItem #heroImage,
-    #hero .container .splitItem .heroInfo {
-        top: 15vh;
-    }
-    #hero {
-        /*height: calc(500px + 15vh);*/
-    }
-}
 @media only screen and (max-height: 800px) and (max-width: 400px) {
     #hero {
         height: calc(500px + 25vh);
