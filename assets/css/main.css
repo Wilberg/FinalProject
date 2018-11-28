@@ -222,6 +222,10 @@ body *::selection {
     float: left;
     list-style: none;
     list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 100px;
 }
 #footer .footerColumn.right {
     float: right;
@@ -233,7 +237,8 @@ body *::selection {
 }
 #footer .footerItem a {
     padding: 10px 10px;
-    border-right: 1px solid #373737;
+    /* border-right: 1px solid #373737; */
+    margin-right: 50px;
     display: block;
     color: #1a77d9;
     text-decoration: none;
@@ -257,6 +262,7 @@ body *::selection {
 }
 .megaContainer {
     max-width: 1000px;
+    padding: 0 50px;
 }
 .textShadow {
     text-shadow: 0 3px 2px rgba(0,0,0,0.2);
@@ -507,7 +513,12 @@ body *::selection {
         display: none;
     }
 }
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 950px) {
+    #footer .footerColumn {
+        height: 150px;
+    }
+}
+@media only screen and (max-width: 850px) {
     /* wtf gjør vi med navigasjon på mobil? */
     #topHead .container .navigation {
         border-left: none;
@@ -531,6 +542,25 @@ body *::selection {
     }
     #hero .container .splitItem .heroInfo {
         padding: 0 30px;
+    }
+    #footer .footerColumn,
+    #footer .footerColumn.right {
+        height: auto;
+        float: none;
+    }
+    #footer .footerColumn.right {
+        margin-top: 15px;
+    }
+    #footer .footerColumn .footerItem {
+        float: none;
+    }
+    #footer .footerColumn .footerItem a {
+        text-align: center;
+        margin: 0;
+    }
+    #footer .footerColumn .footerItem img {
+        margin: 10px auto;
+        display: table;
     }
 }
 @media only screen and (max-width: 550px) {
