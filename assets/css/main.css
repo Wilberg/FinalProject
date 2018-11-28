@@ -87,15 +87,15 @@ body {
     margin-left: 20px;
     padding-left: 20px;
     border-left: 1px solid #e7e7e7;
+    white-space: nowrap;
 }
 #topHead .navigation .navItem {
-    display: block;
+    display: inline-block;
     line-height: 70px;
     padding: 0px 20px;
     color: #11578c;
     font-family: 'Titillium', sans-serif;
     text-decoration: none;
-    float: left;
     letter-spacing: 1px;
     font-size: 15px;
     text-transform: uppercase;
@@ -242,6 +242,7 @@ body *::selection {
     display: block;
     color: #1a77d9;
     text-decoration: none;
+    font-size: 15px;
 }
 #footer .footerItem img {
     height: 40px;
@@ -307,6 +308,7 @@ body *::selection {
 .pageNav .navigationItem span {
     position: relative;
     z-index: 2;
+    font-size: 16px;
 }
 .pageNav .navigationItem::after {
     content:'';
@@ -557,24 +559,66 @@ body *::selection {
         margin: 10px auto;
         display: table;
     }
+    .pageNav {
+        position: static;
+        width: 100%;
+        padding: 0;
+        padding-top: 10px;
+    }
+    .pageNav #stickybox {
+        width: 100%;
+        border: none;
+        padding: 10px 10px;
+    }
+    #stickybox.sticked {
+        position: static;
+        top: 0;
+    }
+    .pageNav .navigationItem {
+        display: inline-block;
+    }
+    .pageMain {
+        padding: 0px 20px;
+    }
+    .pageMain .subTitle,
+    .pageMain .pageText {
+        padding: 0;
+    }
 }
 @media only screen and (max-width: 715px) {
     /* wtf gjør vi med navigasjon på mobil? */
+    #topHead .logo {
+        /* Removes the text in the logo */
+        font-size: 0;
+        width: 60px;
+        height: 70px;
+        margin-left: 5px;
+    }
+    #topHead .logo img {
+        height: auto;
+        width: 100%;
+        margin: 0;
+    }
     #topHead .container .navigation {
         border-left: none;
-        display: none;
+        margin-left: 15px;
+        padding-left: 0;
+        width: calc(100% - 90px);
     }
 }
 @media only screen and (max-width: 550px) {
-    * {
+    body {
         font-size: 15px;
     }
     #hero * {
         font-size: 13px;
     }
+    #topHead .container .navigation {
+        overflow-x: scroll;
+    }
 }
 @media only screen and (max-width: 460px) {
-    * {
+    body {
         font-size: 13px;
     }
     #hero .container .splitItem.img {
@@ -590,7 +634,7 @@ body *::selection {
     }
 }
 @media only screen and (max-width: 350px) {
-    * {
+    body {
         font-size: 12px;
     }
     #hero .splitItem.img {
