@@ -519,11 +519,6 @@ body *::selection {
     }
 }
 @media only screen and (max-width: 850px) {
-    /* wtf gjør vi med navigasjon på mobil? */
-    #topHead .container .navigation {
-        border-left: none;
-        display: none;
-    }
     #topHead .container .navigation .navItem {
         padding: 0px 10px;
         font-size: 13px;
@@ -561,6 +556,13 @@ body *::selection {
     #footer .footerColumn .footerItem img {
         margin: 10px auto;
         display: table;
+    }
+}
+@media only screen and (max-width: 715px) {
+    /* wtf gjør vi med navigasjon på mobil? */
+    #topHead .container .navigation {
+        border-left: none;
+        display: none;
     }
 }
 @media only screen and (max-width: 550px) {
