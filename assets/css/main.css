@@ -331,6 +331,10 @@ body *::selection {
     position: fixed;
     top: 70px;
 }
+.navigationAnchor {
+    position: relative;
+    bottom: 85px;
+}
 .pageMain {
     padding: 30px 30px 30px 280px;
 }
