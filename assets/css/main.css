@@ -601,8 +601,10 @@ body *::selection {
        display: flex;
     }
     #hero .container .splitItem .heroInfo {
-        padding: 1vw 7vw;
+        padding-left: 7vw;
+        padding-right: 7vw;
         top: 0px;
+        padding-top: 10px;
     }
     #hero .container .splitItem #heroImage {
         transform: none;
