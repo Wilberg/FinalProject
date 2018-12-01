@@ -10,5 +10,7 @@ window.addEventListener('scroll', () => {
         } else {
             stickybox.removeAttribute('class');
         }
+    } else {
+        stickybox.removeAttribute('class');
     }
 });
