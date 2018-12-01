@@ -168,11 +168,16 @@ body {
 #hero #heroImage.faded {
     opacity: 0.5;
 }
+/* Fixes a bug in some browsers */
+.section#hero .splitItem {
+    bottom: 1px;
+    overflow: hidden;
+}
 
 #why {
     background-color: #1a77d9;
     color: #fff;
-    box-shadow: 0 0 0 1px #1a77d9;
+    box-shadow: 0 0 0 1px #1a77d9; /* Fixes a bug in some browsers */
 }
 
 body *::selection {
