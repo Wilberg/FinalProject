@@ -295,6 +295,10 @@ body *::selection {
     background-image: url('../media/images/about_the_app_banner.jpg');
     background-position: center top;
 }
+.pageBanner#resourcesPage {
+    background-image: url('../media/images/resources_banner.jpg');
+    background-position: center bottom;
+}
 .pageContent {
     width: 100%;
     position: relative;
