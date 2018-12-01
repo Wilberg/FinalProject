@@ -266,11 +266,23 @@ body *::selection {
 .pageBanner {
     width: 100%;
     height: 400px;
+    position: relative;
+    overflow: hidden;
 }
 .pageBanner img {
     width: 100%;
-    height: 100%;
-    object-fit: cover;
+    position: absolute;
+    width: 100%;
+}
+.pageBanner#problemPage img {
+    top: 50%;
+    transform: translateY(-50%);
+}
+.pageBanner#solutionPage img {
+    top: -200px;
+}
+.pageBanner#aboutPage img {
+    top: 0px;
 }
 .pageContent {
     width: 100%;
