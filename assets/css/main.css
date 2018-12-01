@@ -619,7 +619,6 @@ body *::selection {
     #hero .container .splitItem.info {
         width: 100%;
         overflow: visible;
-        flex: 1;
         -webkit-box-flex: 1;
         -ms-flex-positive: 1;
         flex-grow: 1;
@@ -699,6 +698,11 @@ body *::selection {
     #hero * {
         font-size: 13px;
     }
+    #hero .container .splitItem.info .heroInfo {
+        padding-top:90px;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
     #topHead .container .navigation {
         overflow-x: scroll;
     }
@@ -724,5 +728,8 @@ body *::selection {
     }
     #hero .heroTitle {
         font-size: 3em;
+    }
+    #hero .splitItem.img {
+        display: none;
     }
 }
