@@ -601,8 +601,7 @@ body *::selection {
        display: flex;
     }
     #hero .container .splitItem .heroInfo {
-        padding-left: 7vw;
-        padding-right: 7vw;
+        padding: 0 30px;
         top: 0px;
         padding-top: 10px;
     }
@@ -618,9 +617,7 @@ body *::selection {
         width: 100%;
     }
     #hero .container .splitItem.info {
-        width: 700px;
-        max-width: 100%;
-        margin: 0 auto;
+        width: 100%;
         overflow: visible;
         -webkit-box-flex: 1;
         -ms-flex-positive: 1;
