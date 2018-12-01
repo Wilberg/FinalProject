@@ -289,7 +289,7 @@ body *::selection {
 }
 .pageBanner#solutionPage {
     background-image: url('../media/images/the_solution_banner.jpg');
-    background-position: center -200px;
+    background-position: center;
 }
 .pageBanner#aboutPage {
     background-image: url('../media/images/about_the_app_banner.jpg');
