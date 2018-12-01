@@ -65,12 +65,13 @@ body {
     display: block;
     float: left;
     text-align: center;
-    width: 230px;
+    width: 250px;
     line-height: 70px;
     color: #1a77d9;
     text-transform: uppercase;
     font-family: 'Quicksand', sans-serif;
     font-size: 1.6em;
+    border-right: 1px solid #e7e7e7;
     user-select: none;
     -ms-user-select: none;
     -moz-user-select: none;
@@ -84,9 +85,7 @@ body {
 }
 #topHead .navigation {
     float: left;
-    margin-left: 20px;
     padding-left: 20px;
-    border-left: 1px solid #e7e7e7;
     white-space: nowrap;
 }
 #topHead .navigation .navItem {
@@ -286,7 +285,7 @@ body *::selection {
 .pageNav {
     position: absolute;
     left: 0;
-    width: 251px;
+    width: 250px;
     padding: 20px 10px 20px 0px;
 }
 .pageNav #stickybox {
@@ -294,7 +293,7 @@ body *::selection {
     border-right: 1px solid #e7e7e7;
     padding: 20px 0px;
     display: block;
-    width: 251px;
+    width: 250px;
 }
 .pageNav .navigationItem {
     position: relative;
