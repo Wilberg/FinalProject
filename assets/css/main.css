@@ -277,6 +277,8 @@ body *::selection {
 .pageNav {
     position: absolute;
     left: 0;
+    top: 0;
+    bottom: 0;
     width: 250px;
     padding: 20px 10px 20px 0px;
 }
@@ -321,6 +323,10 @@ body *::selection {
 #stickybox.sticked {
     position: fixed;
     top: 70px;
+}
+#stickybox.unsticked-bottom {
+    position: absolute;
+    bottom: 0;
 }
 .navigationAnchor {
     position: relative;
