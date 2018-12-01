@@ -266,11 +266,19 @@ body *::selection {
 .pageBanner {
     width: 100%;
     height: 400px;
+    background-size: cover;
 }
-.pageBanner img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+.pageBanner#problemPage {
+    background-image: url('../media/images/the_problem_banner.jpg');
+    background-position: center;
+}
+.pageBanner#solutionPage {
+    background-image: url('../media/images/the_solution_banner.jpg');
+    background-position: center -200px;
+}
+.pageBanner#aboutPage {
+    background-image: url('../media/images/about_the_app_banner.jpg');
+    background-position: center top;
 }
 .pageContent {
     width: 100%;
@@ -392,18 +400,6 @@ body *::selection {
     padding-left: 50px;
     margin: 10px 0;
     line-height: 30px;
-}
-.floatImage {
-    float: right;
-    width: 240px;
-    padding: 20px;
-}
-.floatImage img {
-    width: 100%;
-}
-.floatImage p {
-    color: #666;
-    text-align: center;
 }
 /* Sections */
 .section {
