@@ -266,23 +266,19 @@ body *::selection {
 .pageBanner {
     width: 100%;
     height: 400px;
-    position: relative;
-    overflow: hidden;
+    background-size: cover;
 }
-.pageBanner img {
-    width: 100%;
-    position: absolute;
-    width: 100%;
+.pageBanner#problemPage {
+    background-image: url('../media/images/the_problem_banner.jpg');
+    background-position: center;
 }
-.pageBanner#problemPage img {
-    top: 50%;
-    transform: translateY(-50%);
+.pageBanner#solutionPage {
+    background-image: url('../media/images/the_solution_banner.jpg');
+    background-position: center -200px;
 }
-.pageBanner#solutionPage img {
-    top: -200px;
-}
-.pageBanner#aboutPage img {
-    top: 0px;
+.pageBanner#aboutPage {
+    background-image: url('../media/images/about_the_app_banner.jpg');
+    background-position: center top;
 }
 .pageContent {
     width: 100%;
