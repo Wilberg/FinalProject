@@ -699,7 +699,7 @@ body *::selection {
         font-size: 13px;
     }
     #hero .container .splitItem.info .heroInfo {
-        padding-top:90px;
+        padding-top: 20px;
         padding-left: 50px;
         padding-right: 50px;
     }
