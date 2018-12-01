@@ -603,7 +603,7 @@ body *::selection {
     #hero .container .splitItem .heroInfo {
         padding: 0 30px;
         top: 0px;
-        padding-top: 80px;
+        padding-top: 10px;
     }
     #hero .container .splitItem #heroImage {
         transform: none;
