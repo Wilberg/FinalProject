@@ -26,6 +26,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    -webkit-box-sizing: border-box;
 }
 html, body {
     height: 100%;
@@ -92,6 +93,8 @@ body {
     -webkit-user-select: none;
 }
 #topHead .navigation .navItem span {
+    -webkit-transition: color 0.2s;
+    -o-transition: color 0.2s;
     transition: color 0.2s;
     position: relative;
 }
@@ -104,6 +107,8 @@ body {
     height: 2px;
     background-color: #e7e7e7;
     display: block;
+    -webkit-transition: width 0.2s;
+    -o-transition: width 0.2s;
     transition: width 0.2s;
 }
 #topHead .navigation .navItem:hover span {
@@ -164,6 +169,8 @@ body {
     margin: 0 auto;
     opacity: 1;
     width: 366px;
+    -webkit-transition: opacity 0.5s;
+    -o-transition: opacity 0.5s;
     transition: opacity 0.5s;
     top: 15vh;
 }
@@ -179,14 +186,16 @@ body {
 #why {
     background-color: #1a77d9;
     color: #fff;
+    -webkit-box-shadow: 0 0 0 1px #1a77d9;
     box-shadow: 0 0 0 1px #1a77d9; /* Fixes a bug in some browsers */
+}
+
+body *::-moz-selection {
+    background: rgba(0,0,0,0.2);
 }
 
 body *::selection {
     background: rgba(0,0,0,0.2);
-}
-
-#how {
 }
 
 #what {
@@ -215,8 +224,14 @@ body *::selection {
     float: left;
     list-style: none;
     list-style-type: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     height: 100px;
 }
@@ -322,6 +337,8 @@ body *::selection {
     width: 0%;
     height: 100%;
     background-color: #f5f5f5;
+    -webkit-transition: width 0.2s;
+    -o-transition: width 0.2s;
     transition: width 0.2s;
 }
 .pageNav .navigationItem:hover {
@@ -421,6 +438,8 @@ body *::selection {
     position: absolute;
     left: 50%;
     bottom: 0px;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
     transform: translateX(-50%);
 }
 .section .skewSplitter {
@@ -453,6 +472,8 @@ body *::selection {
     position: absolute;
     bottom: -100px;
     left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
     transform: translateX(-50%);
 }
 .section .centerObject {
@@ -492,6 +513,7 @@ body *::selection {
     position: relative;
     border-radius: 5px;
     overflow: hidden;
+    -webkit-box-shadow: 0 6px 7px -5px rgba(0,0,0,0.5);
     box-shadow: 0 6px 7px -5px rgba(0,0,0,0.5);
     user-select: none;
     -ms-user-select: none;
@@ -499,8 +521,13 @@ body *::selection {
     -webkit-user-select: none;
 }
 .section .defaultButton:active {
+    -webkit-transition: all 0.1s linear;
+    -o-transition: all 0.1s linear;
     transition: all 0.1s linear;
+    -webkit-transform: translateY(2px);
+    -ms-transform: translateY(2px);
     transform: translateY(2px);
+    -webkit-box-shadow: 0 1px 3px 0px rgba(0,0,0,0.5);
     box-shadow: 0 1px 3px 0px rgba(0,0,0,0.5);
 }
 .section .defaultButton.darker {
@@ -518,9 +545,13 @@ body *::selection {
     left: -10px;
     width: 110%;
     height: 0%;
+    -webkit-transform:rotate(10deg);
+    -ms-transform:rotate(10deg);
     transform:rotate(10deg);
     background-color: #222;
     z-index: 1;
+    -webkit-transition: height 0.5s;
+    -o-transition: height 0.5s;
     transition: height 0.5s;
 }
 .section .defaultButton:hover::after {
@@ -561,15 +592,21 @@ body *::selection {
         font-size: 13px;
     }
     #hero .container {
+       display: -webkit-box;
+       display: -ms-flexbox;
        display: flex;
     }
     #hero .container .splitItem.img {
         width: 130px;        
     }
     #hero .container .splitItem.info {
+        -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
         flex-grow: 1;
     }
     #hero .container .splitItem #heroImage {
+        -webkit-transform: translateX(-75%);
+        -ms-transform: translateX(-75%);
         transform: translateX(-75%);
     }
     #hero .container .splitItem .heroInfo {
@@ -659,6 +696,8 @@ body *::selection {
         width: 60px;        
     }
     #hero .container .splitItem #heroImage {
+        -webkit-transform: translateX(-83%);
+        -ms-transform: translateX(-83%);
         transform: translateX(-83%);
     }
 }
