@@ -622,6 +622,7 @@ body *::selection {
         max-width: 100%;
         margin: 0 auto;
         overflow: visible;
+        flex: 1;
         -webkit-box-flex: 1;
         -ms-flex-positive: 1;
         flex-grow: 1;
